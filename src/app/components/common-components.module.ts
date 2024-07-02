@@ -1,0 +1,38 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { IconsModule } from '../modules/icons/icons.module';
+
+// components
+import { HeaderBannerComponent } from './header-banner/header-banner.component';
+import { PartnersComponent } from './partners/partners.component';
+import { FooterComponent } from './footer/footer.component';
+import { ListenNowComponent } from './listen-now/listen-now.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { BenefitsComponent } from './benefits/benefits.component';
+
+
+@NgModule({
+  declarations: [
+    HeaderBannerComponent,
+    BenefitsComponent,
+    PartnersComponent,
+    ListenNowComponent,
+    NewsletterComponent,
+    FooterComponent,
+  ],
+  imports: [
+    CommonModule,
+    IconsModule
+  ],
+  exports: [
+    HeaderBannerComponent,
+    BenefitsComponent,
+    PartnersComponent,
+    ListenNowComponent,
+    NewsletterComponent,
+    FooterComponent,
+    IconsModule
+  ]
+})
+export class CommonComponentsModule { }

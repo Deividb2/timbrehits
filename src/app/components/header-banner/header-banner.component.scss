@@ -1,0 +1,55 @@
+@import "../../../styles/variables";
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(../../../../public/images/banner.png) no-repeat center center / cover;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $white;
+
+        .header-left {
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .header-left__menu {
+                    font-size: 2rem;
+                    color: $black;
+
+                }
+                .header-left__headset {
+
+                    ng-icon {
+                        color: $white;
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .navegation {
+                display: none;
+            }
+        }
+
+        .header-right {
+
+            .header-right__login, .btn{
+                display: none;
+            }
+
+            // .header-right__networks{}
+        }
+    }
+
+    .banner {
+        justify-self: center;
+
+
+    }
+}
