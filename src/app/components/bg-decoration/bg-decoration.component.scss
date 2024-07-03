@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+
+section {
+    height: 70vh;
+    width: 100%;
+    background: url(../../../../public/images/bg-decoration.webp) no-repeat center center / cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+    background-color: rgba(208, 180, 143, 0.541);
+}

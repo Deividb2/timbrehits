@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ListenNowComponent } from './listen-now/listen-now.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { BenefitsComponent } from './benefits/benefits.component';
+import { BgDecorationComponent } from './bg-decoration/bg-decoration.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { BenefitsComponent } from './benefits/benefits.component';
     BenefitsComponent,
     PartnersComponent,
     ListenNowComponent,
+    BgDecorationComponent,
     NewsletterComponent,
     FooterComponent,
   ],
@@ -30,6 +32,7 @@ import { BenefitsComponent } from './benefits/benefits.component';
     BenefitsComponent,
     PartnersComponent,
     ListenNowComponent,
+    BgDecorationComponent,
     NewsletterComponent,
     FooterComponent,
     IconsModule
