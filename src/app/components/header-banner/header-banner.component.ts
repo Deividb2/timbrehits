@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './header-banner.component.scss'
 })
 export class HeaderBannerComponent {
-
+  menu: boolean = false
+  hendleMenu() {
+    this.menu = !this.menu
+  }
 }

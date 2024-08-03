@@ -27,6 +27,8 @@ main {
                 .header-left__menu {
                     font-size: 2rem;
                     color: $black;
+                    position: relative;
+                    z-index: 2;
 
                     ng-icon {
                         font-size: 2.3rem;
@@ -65,7 +67,7 @@ main {
                 align-items: center;
                 gap: .5rem;
 
-                ng-icon:last-child {
+                ng-icon {
                     font-size: 1rem;
 
                     &:last-child {
@@ -104,6 +106,195 @@ main {
             text-decoration: none;
             color: $black;
             background-color: $beige-2;
+        }
+    }
+}
+
+.navegation-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem .5rem;
+    height: 100vh;
+    background-color: $gray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+        color: $white;
+        font-weight: 100;
+        font-size: 1.2rem;
+
+        &:first-child {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: 1.1rem;
+
+            ng-icon {
+                font-size: 1.8rem;
+            }
+        }
+
+        &:first-child,
+        &:nth-child(2) {
+            color: $beige-2;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        header {
+
+            .header-left {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                div {
+                    .header-left__menu {
+                        display: none;
+                    }
+                }
+
+                .navegation {
+                    display: flex;
+                    gap: 1rem;
+
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                        font-size: .9rem;
+                        font-weight: 100;
+                        transition: color .5s ease;
+
+                        &:first-child {
+                            color: $beige-2;
+                        }
+
+                        &:hover {
+                            color: $beige-2;
+                        }
+                    }
+                }
+            }
+
+            .header-right {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .header-right__login {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    color: $beige-2;
+                    text-decoration: none;
+
+                    ng-icon {
+                        font-size: 2rem;
+                        color: $beige-2;
+                    }
+                }
+
+                .btn {
+                    display: block;
+                    padding: .5rem;
+                    background-color: $beige-2;
+                    color: $black;
+                    text-decoration: none;
+                    font-size: .8rem;
+                    transition: background-color .4s ease;
+
+                    &:hover {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+
+        .banner {
+            margin: auto 4rem;
+
+            h3 {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 3.5rem;
+                max-width: 30rem;
+            }
+
+            a {
+                position: static;
+                align-self: flex-start;
+                color: $white;
+                background-color: transparent;
+                border: 1px solid $white;
+                padding: .7rem 2rem;
+                transition: background-color .3s ease;
+
+                &:hover {
+                    background-color: $white;
+                    color: $beige-2;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1440px) {
+    main {
+        min-height: 80vh;
+        padding: 0 1rem;
+
+        header {
+            padding: 2rem 1rem;
+
+            .header-right {
+
+                .header-right__networks {
+                    gap: 1rem;
+
+                    ng-icon {
+                        font-size: 1.3rem;
+
+                        &:last-child {
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .banner {
+            margin: auto 14rem;
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 100;
+            }
+
+            h2 {
+                font-size: 4.5rem;
+                max-width: 40rem;
+                margin: 0 0 3rem;
+            }
+
+            a {
+                padding: 1rem 2.5rem;
+            }
         }
     }
 }

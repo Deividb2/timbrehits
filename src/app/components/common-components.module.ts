@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// Modules
 import { IconsModule } from '../modules/icons/icons.module';
+import { DirectivesModule } from '../modules/directives/directives.module';
 
-// components
+// Components
 import { HeaderBannerComponent } from './header-banner/header-banner.component';
 import { PartnersComponent } from './partners/partners.component';
 import { FooterComponent } from './footer/footer.component';
@@ -25,7 +27,8 @@ import { BgDecorationComponent } from './bg-decoration/bg-decoration.component';
   ],
   imports: [
     CommonModule,
-    IconsModule
+    IconsModule,
+    DirectivesModule,
   ],
   exports: [
     HeaderBannerComponent,
@@ -35,7 +38,8 @@ import { BgDecorationComponent } from './bg-decoration/bg-decoration.component';
     BgDecorationComponent,
     NewsletterComponent,
     FooterComponent,
-    IconsModule
+    IconsModule,
+    DirectivesModule,
   ]
 })
 export class CommonComponentsModule { }

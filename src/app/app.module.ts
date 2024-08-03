@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 // Modules
 import { CommonComponentsModule } from './components/common-components.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,7 @@ import { CommonComponentsModule } from './components/common-components.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CommonComponentsModule,
+    CommonComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
